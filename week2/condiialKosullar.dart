@@ -45,4 +45,8 @@ void main() {
   } else {
     print("borcunuzu odeyin lutfen");
   }
+
+  // magaza ismi ver
+  String magaza = "avm";
+  print(magaza);
 }
