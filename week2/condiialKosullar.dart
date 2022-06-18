@@ -46,7 +46,31 @@ void main() {
     print("borcunuzu odeyin lutfen");
   }
 
-  // magaza ismi ver
-  String magaza = "avm";
-  print(magaza);
+  // bir magaza ismi örnegi
+
+  final String ahmetCompany = "Ahmet";
+  final String mehmetCompany = "Mehmet";
+  final String veliCompany = "Veli";
+  final String kxCompany = "kx";
+  final String xCompany = "x";
+
+  const int companyLenght = 2;
+  String results = "";
+
+  if (ahmetCompany.length > companyLenght) {
+    results = results + ahmetCompany;
+  }
+  if (mehmetCompany.length > companyLenght) {
+    results = results + mehmetCompany;
+  }
+  if (veliCompany.length > companyLenght) {
+    results += veliCompany;
+  }
+  if (kxCompany.length > companyLenght) {
+    results += kxCompany;
+  }
+  if (xCompany.length > companyLenght) {
+    results += xCompany;
+  }
+  print(results);
 }
