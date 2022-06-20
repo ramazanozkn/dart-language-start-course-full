@@ -30,4 +30,30 @@ void main() {
   newMoneys.clear();
 
   print(newMoneys);
+
+  // newMoneys.reversed.toList(); // listeyi tersine çevirir ve yeni bir liste oluşturur.
+
+  // 100 tane musteri yap bunlarin hepsine sira ile bumarasina göre + 5tl ekle
+
+  List<double> customerMoney = List.generate(100, (index) {
+    return index + 5;
+  });
+  // print(customerMoney);
+
+  // Customers 100 30 40 60
+  // 35tl den buyuk olanalara kredi verebiliriiz kucuklere bye
+
+  List<int> customers = [100, 30, 40, 60, -5];
+  customers.sort(); // kucukten buyuge siralar liste içini.
+//forda i<customers.length yani length listenin uzunluğu içini değil.
+  for (int i = 0; i < customers.length; i++) {
+    print("musteri parası:${customers[i]}");
+    if (customers[i] > 35) {
+      print("kredi verebiliriz");
+    } else if (customers[i] > 0) {
+      print("kredi verebiliriz bi bakalım");
+    } else {
+      print("bye");
+    }
+  }
 }
