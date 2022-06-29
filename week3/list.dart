@@ -56,4 +56,15 @@ void main() {
       print("bye");
     }
   }
+
+  print("----------------------------------------------------");
+  List<dynamic> users = [1, 'ayse', true]; // dynamic türünde liste oluşturur.
+
+  for (var item in users) {
+    print(item);
+  }
+
+  List<String> names = ['ayse', 'ahmet', 'mehmet'];
+
+  names.contains("ahmet");
 }
