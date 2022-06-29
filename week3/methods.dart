@@ -17,6 +17,7 @@ void main(List) {
       userEuro: 500); //required kulladığımızda ilk değeri burda vermek zorunda
   //diğerinide standart atadık değer vermezsek fonk belirttiğimiz gelir.
   print(newResult3);
+  sayHello('ahmet');
 }
 
 // mesala müşterinin parasını kontrol et denildiği zaman if kullanıp ederiz ama sürekli gelen müştri olursa hep if yapısı kullanmak kalbslık oluşturur
@@ -41,4 +42,8 @@ int convertToStandartDolar(int userMoney, {int dolarIndex = 13}) {
 // requred ilk değer vermek istemediğimizde yazıyoruz.
 int convertToEuro({required int userEuro, int euroIndex = 18}) {
   return userEuro ~/ euroIndex;
+}
+
+String sayHello(String name) {
+  return 'Hello $name';
 }
