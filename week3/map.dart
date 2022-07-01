@@ -46,10 +46,12 @@ void main() {
   }
 
   // hesaplardaki toplam parayı yazdır
-
-  for (var item in bankam.keys) {
-    for (var para in bankam[item]!) {
-      print(object)
+  print('---------------------------------------');
+  for (var name in bankam.keys) {
+    int result = 0;
+    for (var para in bankam[name]!) {
+      result = result + para;
     }
+    print("$name 'in toplam parası: $result");
   }
 }
